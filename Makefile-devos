@@ -1,0 +1,37 @@
+# Simple dirty testing without installing the program.
+CC = gcc
+CFLAGS = -g -std=c99 -Wall  -D_DEFAULT_SOURCE `pkg-config --cflags gtk+-3.0 webkit2gtk-4.0 sqlite3 gtksourceview-3.0`
+LDLIBS = `pkg-config --libs gtk+-3.0 webkit2gtk-4.0 sqlite3 gtksourceview-3.0` -lm
+
+TARGET = crystalcat
+SRCS = crystalcat.c
+OBJS = $(SRCS:.c=.o)
+
+# Primary target
+all: $(TARGET)
+
+# Rule to link the final executable
+$(TARGET): $(OBJS)
+	$(CC) $(OBJS) -o $(TARGET) $(LDLIBS)
+
+# Rule to compile C source files to object files
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+run: all
+	./$(TARGET)
+
+clean:
+	rm -f $(TARGET) $(OBJS)
+
+dev: clean all run
+
+# Launch application directly inside GDB for debugging
+debug: all
+	gdb ./$(TARGET)
+
+# Run under Valgrind to trace memory leaks
+valgrind: all
+	valgrind --leak-check=full --track-origins=yes ./$(TARGET)
+
+.PHONY: all run debug valgrind clean dev
