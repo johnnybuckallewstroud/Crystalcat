@@ -34,7 +34,7 @@ $(TARGET):$(OBJS)
 
 # Rule to compile C source files to object files
 %.o: %.c
-	$(CC)$(CFLAGS) -c $< -o$@
+	$(CC) $(CFLAGS) -c $< -o$@
 
 # Install dependencies, compile binary, and install to system PATH
 install-deps: deps all install
