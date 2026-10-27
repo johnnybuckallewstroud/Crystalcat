@@ -17,10 +17,7 @@ Animated Companion System:
 Features a retro 1-bit XBM pixelated rabbit assistant and a cat companion that dynamically react to workspace events, compile states, typing rhythms, and system moods.
 
 How Crystalcat Connects with the "Dead Internet Theory"
-The Dead Internet Theory posits that the modern public web has largely ceased to be a space for 
-organic human interaction, having been overtaken by automated bots, algorithmic feeds, pervasive 
-ad-tech tracking, and synthetic AI-generated noise. Crystalcat MDE connects with, and functions 
-as a direct operational response to, the Dead Internet Theory in several key ways:
+The Dead Internet Theory posits that the modern public web has largely ceased to be a space for organic human interaction, having been overtaken by automated bots, algorithmic feeds, pervasive ad-tech tracking, and synthetic AI-generated noise. Crystalcat MDE connects with, and functions as a direct operational response to, the Dead Internet Theory in several key ways:
 
 1. Stripping Away Surveillance Capitalism and Ad-Tech Bloat
 The modern web is cluttered with invisible trackers, analytics pixels, dynamic ad injectors, and anti-adblock scripts designed to feed automated data harvesters. Crystalcat combats this by treating incoming web traffic through a hostile lens:
