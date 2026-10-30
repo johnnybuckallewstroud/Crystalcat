@@ -1,6 +1,18 @@
 # Crystalcat
 A Open source MDE Source code editor, browser and much more. 
 
+How do I install the source code into a working software ? 
+sudo make deps clean all install 
+
+how do I uninstall the program ? 
+sudo make uninstall 
+
+Other handy make commands: 
+make debug 
+make clean all 
+make all 
+make dev 
+
 
 MDE CRYSTALCAT
 A high-performance modular development environment for ANSI C.
