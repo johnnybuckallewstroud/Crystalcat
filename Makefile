@@ -52,7 +52,7 @@ run: all
 	./$(TARGET)
 
 clean:
-	rm -f $(TARGET)$(OBJS)
+	rm -f $(TARGET) $(OBJS)
 
 dev: clean all run
 
