@@ -5,13 +5,14 @@ How do I install the source code into a working software ?
 sudo make deps clean all install 
 
 how do I uninstall the program ? 
-sudo make uninstall 
+ [ sudo make uninstall ]
 
 Other handy make commands: 
-make debug 
-make clean all 
-make all 
-make dev 
+[ make debug ] 
+[ make clean all ] 
+[ make all ]
+[ make dev ]
+
 
 
 MDE CRYSTALCAT
